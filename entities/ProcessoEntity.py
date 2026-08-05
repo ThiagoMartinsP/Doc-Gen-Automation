@@ -7,7 +7,7 @@ class Processo:
     posicao_processo: str
     numero_cpf_processo: str
     numero_cnpj_processo: str
-    valor_do_contrato_processo: str
+    valor_contrato_processo: str
     nome_banco_processo: str
     endereco_banco_processo: str
     tipo_acao_processo: str

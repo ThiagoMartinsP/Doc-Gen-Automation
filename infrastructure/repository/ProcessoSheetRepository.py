@@ -1,4 +1,4 @@
-from ISheetRepository import ISheetRepository
+from infrastructure.repository.ISheetRepository import ISheetRepository
 from entities.ProcessoEntity import Processo
 from infrastructure.CONFIG import RELACAO_CABECALHO_PROCESSO
 from utils.mergeDictionaries import mergeDictionaries
@@ -11,9 +11,12 @@ class ProcessoSheetRepository(ISheetRepository):
         keys = self.sheet.row_values(self.sheet.find("CONTRATANTE (CLIENTE)", in_column=1).row)
         values = self.sheet.row_values(line)
 
+        # gspread omite as células vazias no fim da linha
+        values += [""] * (len(keys) - len(values))
+
         # Nome coluna : valor coluna
         dictProcesso = dict(zip(keys, values))
         # Nome var : valor coluna
-        objectProcessDict = swapDictionaries(RELACAO_CABECALHO_PROCESSO, dictProcesso)
+        objectProcessDict = mergeDictionaries(RELACAO_CABECALHO_PROCESSO, dictProcesso)
 
         return Processo(**objectProcessDict)

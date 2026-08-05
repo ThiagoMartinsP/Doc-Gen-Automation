@@ -28,7 +28,7 @@ RELACAO_CABECALHO_PROCESSO = {
     "Posição do autor/reu" : "posicao_processo",
     "CPF"                  : "numero_cpf_processo",
     "CNPJ"                 : "numero_cnpj_processo",
-    "Valor do contrato"    : "valor_do_contrato_processo",
+    "Valor do contrato"    : "valor_contrato_processo",
     "Banco"                : "nome_banco_processo",
     "Endereço do banco"    : "endereco_banco_processo",
     "Tipo de ação"         : "tipo_acao_processo"
