@@ -226,4 +226,3 @@ tests/testing-files/output/
 .pytest_cache
 *.json
 !tests/**/*.json
-__init__.py
