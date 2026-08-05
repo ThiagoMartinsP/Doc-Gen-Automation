@@ -1,11 +1,13 @@
 from docxtpl import DocxTemplate
 
-class DocxEntity:
+class Documento:
     def __init__(self, nomeArquivo: str):
         self.nomeArquivo = nomeArquivo
         self.documento = DocxTemplate(nomeArquivo)
         self.variaveisDocumento = self.documento.get_undeclared_template_variables()
 
-    def geraModelo(self, contexto) -> None:
+    def render(self, contexto: dict) -> None:
         self.documento.render(contexto)
-        self.documento.save(contexto.contratante)
+
+    def save(self, caminho: str) -> None:
+        self.documento.save(caminho)

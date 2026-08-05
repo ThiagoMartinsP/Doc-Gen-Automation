@@ -1,0 +1,38 @@
+{
+    "cliente": {
+        "contratante": "Fulano de Tal",
+        "tipo_pessoa": "PF",
+        "cpf": "12345678900",
+        "cnpj": "",
+        "telefone": "21999999999",
+        "email": "fulano@teste.com",
+        "rg": "123456",
+        "genero": "Masculino",
+        "nacionalidade": "Brasileiro",
+        "estado_civil": "Solteiro",
+        "profissao": "Engenheiro",
+        "logradouro": "Rua Exemplo",
+        "numero": 100,
+        "complemento": "Apto 1",
+        "bairro": "Centro",
+        "cidade": "Rio de Janeiro",
+        "uf": "RJ",
+        "cep": "20000000"
+    },
+    "advogado": {
+        "nome_advogado": "Ciclana Advogada",
+        "numero_oab": "123456",
+        "estado_oab": "RJ",
+        "endereco_escritorio": "Av. Escritorio, 1"
+    },
+    "processo": {
+        "contratante_processo": "Fulano de Tal",
+        "posicao": "Autor",
+        "nome_posicao": "Requerente",
+        "numero_cpf": "12345678900",
+        "numero_cnpj": "",
+        "valor_do_contrato": "1000.00",
+        "nome_banco": "Banco Exemplo",
+        "endereco_banco": "Av. Banco, 1"
+    }
+}
